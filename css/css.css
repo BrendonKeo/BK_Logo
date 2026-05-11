@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+/* =========================
+   BASE (SHARED)
+========================= */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #232323;
+}
+
+/* NAVBAR  */
+.navbar,
+.navbar-brand,
+.nav-link {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.bg-body-tertiary {
+    background-color: #004DA4 !important;
+}
+
+.navbar-brand {
+    color: #f5f5f5 !important;
+    font-weight: 600;
+}
+
+.navbar .nav-link {
+    color: #f5f5f5 !important;
+    font-weight: 400 !important;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #004DA4 !important;
+    font-weight: 400 !important;
+}
+
+.navbar .nav-link.active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.navbar .nav-link.active:hover {
+    color: #004DA4 !important;
+}
+
+.navbar-toggler {
+    border-color: #f5f5f5; /* Changes the button border color */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(245, 245, 245, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* TYPE STRUCTURE (SHARED) */
+h1, .h1 { font-size: var(--text-size-700); }
+h2, .h2 { font-size: var(--text-size-600); }
+h3, .h3 { font-size: var(--text-size-500); }
+h4, .h4 { font-size: var(--text-size-400); }
+h5, .h5 { font-size: var(--text-size-300); }
+h6, .h6 { font-size: var(--text-size-200); }
+
+p {
+    margin: 1rem 0;
+}
+
+small {
+    font-size: var(--text-size-90);
+}
+
+/* UTILITY SIZES */
+.text-size-80 { font-size: var(--text-size-80); }
+.text-size-90 { font-size: var(--text-size-90); }
+.text-size-100 { font-size: var(--text-size-100); }
+.text-size-200 { font-size: var(--text-size-200); }
+.text-size-300 { font-size: var(--text-size-300); }
+.text-size-400 { font-size: var(--text-size-400); }
+.text-size-500 { font-size: var(--text-size-500); }
+.text-size-600 { font-size: var(--text-size-600); }
+.text-size-700 { font-size: var(--text-size-700); }
+
+/* SETTINGS BOX */
+.settings-box {
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #555;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+.footer-bk {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* =========================
+   THEME A (Cardo + Work Sans)
+========================= */
+
+.theme-a {
+    --text-size-80: 0.64rem;
+    --text-size-90: 0.8rem;
+    --text-size-100: 1rem;
+    --text-size-200: 1.25rem;
+    --text-size-300: 1.563rem;
+    --text-size-400: 1.953rem;
+    --text-size-500: 2.441rem;
+    --text-size-600: 3.052rem;
+    --text-size-700: 3.815rem;
+
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+.theme-a h1,
+.theme-a h2,
+.theme-a h3,
+.theme-a h4,
+.theme-a h5,
+.theme-a h6 {
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.022em;
+}
+
+.theme-a .inline-link {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #24528F;
+}
+
+.theme-a .inline-link:hover {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.theme-a em {
+    font-weight: 500;
+}
+
+/* =========================
+   THEME B (Plus Jakarta Sans)
+========================= */
+
+.theme-b {
+    --text-size-80: 0.694rem;
+    --text-size-90: 0.833rem;
+    --text-size-100: 1rem;
+    --text-size-200: 1.2rem;
+    --text-size-300: 1.44rem;
+    --text-size-400: 1.728rem;
+    --text-size-500: 2.074rem;
+    --text-size-600: 2.488rem;
+    --text-size-700: 2.986rem;
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+}
+
+.theme-b h1,
+.theme-b h2,
+.theme-b h3,
+.theme-b h4,
+.theme-b h5,
+.theme-b h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.022em;
+}
+
+.theme-b .inline-link {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #24528F;
+    text-decoration: underline;
+}
+
+.theme-b .inline-link:hover {
+    background-color: #24528F;
+    color: #f5f5f5;
+}
+
+.theme-b em {
+    font-weight: 700;
+}
+
+/* =========================
+   THEME C (Lora)
+========================= */
+
+.theme-c {
+    --text-size-80: 0.694rem;
+    --text-size-90: 0.833rem;
+    --text-size-100: 1rem;
+    --text-size-200: 1.2rem;
+    --text-size-300: 1.44rem;
+    --text-size-400: 1.728rem;
+    --text-size-500: 2.074rem;
+    --text-size-600: 2.488rem;
+    --text-size-700: 2.986rem;
+
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #222222;
+}
+
+.theme-c h1,
+.theme-c h2,
+.theme-c h3,
+.theme-c h4,
+.theme-c h5,
+.theme-c h6 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.022em;
+}
+
+.theme-c .inline-link {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #7d6708;
+    text-decoration: underline;
+}
+
+.theme-c .inline-link:hover {
+    background-color: #dab40d;
+    color: #f5f5f5;
+    text-decoration: line-through;
+}
+
+.theme-c em {
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Sticky footer fix */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.logo-card-img {
+  max-height: 120px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card {
+  border-radius: 16px;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.dark-card {
+  background-color: #232323;
+  color: white;
+  border: 1px solid #222;
+}
+
+.dark-card .card-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark-card h2 {
+  color: white;
+}
